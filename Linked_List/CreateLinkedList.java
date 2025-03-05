@@ -25,8 +25,8 @@ public class CreateLinkedList {
 
         if (head == null) {
             head = newNode;
-        }else {
-            while(current.next != null) {
+        } else {
+            while (current.next != null) {
                 current = current.next;
             }
             current.next = newNode;
@@ -41,7 +41,7 @@ public class CreateLinkedList {
 
         Node current = head;
 
-        while (current != null) {  
+        while (current != null) {
             System.out.print(current.data + " -> ");
             current = current.next;
         }
@@ -61,7 +61,7 @@ public class CreateLinkedList {
 
         ArrayList<Node> reverse = new ArrayList<>();
 
-        for(int i = list.size()-1; i >= 0; i--) {
+        for (int i = list.size() - 1; i >= 0; i--) {
             reverse.add(list.get(i));
         }
 
@@ -75,10 +75,10 @@ public class CreateLinkedList {
         if (NodeHead == null) {
             System.out.println("LinkedList is Empty !");
         }
-    
+
         Node current = NodeHead;
-    
-        while (current != null) {  
+
+        while (current != null) {
             System.out.print(current.data + " -> ");
             current = current.next;
         }
@@ -89,17 +89,16 @@ public class CreateLinkedList {
 
 class Main {
     public static void main(String[] args) {
-        
+
         CreateLinkedList NodeList = new CreateLinkedList();
 
-        NodeList.append(10);
-        NodeList.append(20);
-        NodeList.append(30);
-        NodeList.append(40);
-        NodeList.append(50);
+        // NodeList.append(10);
+        // NodeList.append(20);
+        // NodeList.append(30);
+        // NodeList.append(40);
+        // NodeList.append(50);
 
-        NodeList.reverseLinkedList();
-
+        // NodeList.reverseLinkedList();
 
     }
 }
