@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class AdjancencyMatrix {
-
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -10,9 +9,8 @@ public class AdjancencyMatrix {
         int vertex = sc.nextInt();
         int edges = sc.nextInt();
 
-
         int[][] AdjMatrix = new int[vertex][vertex];
-
+        
         int u;
         int v;
         int weight;
@@ -25,7 +23,6 @@ public class AdjancencyMatrix {
             AdjMatrix[u][v] = weight;
             AdjMatrix[v][u] = weight;
         }
-
         for(int i = 0; i < vertex; i++) {
             for(int j = 0; j < vertex; j++) {
                 System.out.print(AdjMatrix[i][j]+" ");
@@ -33,6 +30,5 @@ public class AdjancencyMatrix {
             System.out.println();
         }
         sc.close();
-    }
-    
+    }  
 }
